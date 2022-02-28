@@ -23,6 +23,10 @@ jobs:
       uses: actions/setup-node@v2 
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+        
+    - name: npm dependency install, npm test with coverage, npm build   
       run: npm install
+    - name: npm test with coverage, npm build     
       run: npm test -- --coverage
+    - name: npm build     
+      run: npm run build
