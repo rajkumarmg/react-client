@@ -1,3 +1,5 @@
+[![react-client-master CI and CD](https://github.com/rajkumarmg/react-client/actions/workflows/react-client-master.js.yml/badge.svg)](https://github.com/rajkumarmg/react-client/actions/workflows/react-client-master.js.yml)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
