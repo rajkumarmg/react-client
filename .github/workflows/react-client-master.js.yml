@@ -34,7 +34,7 @@ jobs:
       run: |
         git config --global user.name Rajkumar M
         git config --global user.email igilli.2007@gmail.com
-        git remote set-url origin https://github.com/rajkumarmg/react-client.git
+        git remote set-url origin https://${github_token}@github.com/${repository}
         npm run deploy
       env:
         user_name: Rajkumar M
