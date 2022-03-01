@@ -32,12 +32,12 @@ jobs:
       run: npm run build
     - name: deploy to github pages
       run: |
-        git config --global user.name Rajkumar M
-        git config --global user.email igilli.2007@gmail.com
-        git remote set-url origin https://${github_token}@github.com/${repository}
-        npm run deploy
+       git config --global user.name $user_name
+       git config --global user.email $user_email
+       git remote set-url origin https://${github_token}@github.com/${repository}
+       npm run deploy
       env:
-        user_name: Rajkumar M
-        user_email: igilli.2007@gmail.com
+        user_name: 'Rajkumar M'
+        user_email: 'igilli.2007@gmail.com'
         github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         repository: ${{ github.repository }}  
