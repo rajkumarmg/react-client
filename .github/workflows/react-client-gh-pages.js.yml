@@ -24,7 +24,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: prepare, build and deploy to github pages (no test)    
-    - name: prepare
       run: 
         npm ci
     - name: build
