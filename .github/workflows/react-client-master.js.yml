@@ -32,9 +32,9 @@ jobs:
       run: npm run build
     - name: deploy to github pages
       run: |
-        git config --global user.name Rajkumar M
-        git config --global user.email igilli.2007@gmail.com
-        git remote set-url origin https://${github_token}@github.com/${repository}
+        git config user.name Rajkumar M
+        git config user.email igilli.2007@gmail.com
+        git remote set-url origin https://github.com/rajkumarmg/react-client.git
         npm run deploy
       env:
         user_name: 'github-actions[bot]'
