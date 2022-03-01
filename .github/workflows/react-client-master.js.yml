@@ -29,8 +29,8 @@ jobs:
     - name: npm test with coverage, npm build     
       run: npm test -- --coverage
       env:
-        user_name: 'Rajkumar M'
-        user_email: 'igilli.2007@gmail.com'
+        user_name: Rajkumar M
+        user_email: igilli.2007@gmail.com
         github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         repository: ${{ github.repository }}  
     - name: deploy to github pages
